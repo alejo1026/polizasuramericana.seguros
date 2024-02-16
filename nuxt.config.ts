@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   nitro: {
     // preset: "aws-lambda",
     inlineDynamicImports: true,
-    preset: 'vercel-edge',
+    preset: 'node-server'
   },
   runtimeConfig: {
     SOCKET: process.env.SOCKET,
