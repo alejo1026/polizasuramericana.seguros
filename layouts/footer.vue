@@ -58,8 +58,6 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    --url-logo-footer: url('assets/images/logo-secure.png');
-    --url-logo-medio-pago-footer: url('assets/images/medios-de-pago.png');
     --content-summary-color: #fff;
     font-family: var(--primary-font-family)!important;
     font-size: 1rem;
@@ -162,7 +160,6 @@
         font-family: 'Barlow' sans-serif;
     }
     .footer-container{
-        border-inline-start-width: ;
         background:rgb(83 86 90);
         color:white;
         padding:2rem 0px
@@ -261,8 +258,6 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    --url-logo-footer: url('assets/images/logo-secure.png');
-    --url-logo-medio-pago-footer: url('assets/images/medios-de-pago.png');
     --content-summary-color: #fff;
     font-family: var(--primary-font-family)!important;
     font-size: 1rem;

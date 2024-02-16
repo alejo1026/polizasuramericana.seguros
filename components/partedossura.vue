@@ -833,8 +833,6 @@
         --breakpoint-xl: 1200px;
         --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
         --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-        --url-logo-footer: url('assets/images/logo-secure.png');
-        --url-logo-medio-pago-footer: url('assets/images/medios-de-pago.png');
         --content-summary-color: #fff;
         text-align: left;
         --primary: #0033a0;
