@@ -1,11 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  nitro: {
-    // preset: "aws-lambda",
-    inlineDynamicImports: true,
-    preset: 'vercel-edge'
-  },
+  // nitro: {
+  //   // preset: "aws-lambda",
+  //   inlineDynamicImports: true,
+  //   preset: 'vercel-edge'
+  // },
   runtimeConfig: {
     SOCKET: process.env.SOCKET,
     public: {
