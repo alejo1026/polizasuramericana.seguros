@@ -9,20 +9,21 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/device": "^3.1.0",
     "nuxt": "^3.9.3",
+    "nuxt-icon": "^0.4.1",
     "nuxt-primevue": "^0.2.2",
     "vue": "^3.4.14",
-    "@nuxtjs/device": "^3.1.0",
-    "vue-router": "^4.2.5",
-    "nuxt-icon": "^0.4.1"
-
+    "vue-router": "^4.2.5"
   },
   "dependencies": {
     "@pinia/nuxt": "0.4.8",
     "bootstrap": "^5.3.2",
+    "bufferutil": "^4.0.8",
     "pinia": "2.0.34",
     "socket.io": "^4.7.1",
     "socket.io-client": "^4.7.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "utf-8-validate": "^5.0.10"
   }
 }
