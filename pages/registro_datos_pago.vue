@@ -5,7 +5,7 @@
 
   const storeTienda:any = useTienda()
   const sockt = ref()
-  const socket = io('http://192.168.80.28:4001/visitantesSoatSura');
+  const socket = io(config.public.SOCKET);
   onMounted(() => {
     // console.log(storeTienda.infoParteDos)
     if (storeTienda.parteDos) {

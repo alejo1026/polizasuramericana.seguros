@@ -6,7 +6,7 @@
   import Dialog from 'primevue/dialog';
   const footer = 'footer'
 
-  const socket = io('http://192.168.80.28:4001/visitantesSoatSura');
+  const socket = io(config.public.SOCKET);
   const alertaPlaca = ref(false)
   const text = ref()
   const btn = ref(false)

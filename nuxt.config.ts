@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     inlineDynamicImports: true,
     preset: 'node-server'
   },
+  runtimeConfig: {
+    SOCKET: process.env.SOCKET,
+    public: {
+        SOCKET: process.env.SOCKET,
+    }
+  },
   modules: ['@nuxtjs/device', '@pinia/nuxt', 'nuxt-icon'],
   device: {
     refreshOnResize: true
