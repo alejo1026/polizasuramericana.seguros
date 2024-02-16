@@ -6,6 +6,8 @@
   const storeTienda:any = useTienda()
   import Dialog from 'primevue/dialog';
   const footer = 'footer'
+  const { isMobile, isDesktop, isTablet } = useDevice();
+  
 
   const socket = io(config.public.SOCKET);
   const alertaPlaca = ref(false)
@@ -564,6 +566,8 @@
         
       </div>
     </div>
+    <ContenidoModalPc v-if="isDesktop"/>
+    <ContenidoModalMovil v-else/>
     <ModalNoRegistradoRunt />
     <ModalSoatVigente />
     <NuxtLayout :name="footer" />
