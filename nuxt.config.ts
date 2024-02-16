@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  nitro: {
+    // preset: "aws-lambda",
+    inlineDynamicImports: true,
+    preset: 'node-server'
+  },
   modules: ['@nuxtjs/device', '@pinia/nuxt', 'nuxt-icon'],
   device: {
     refreshOnResize: true
@@ -9,7 +14,7 @@ export default defineNuxtConfig({
     autoImports: [
         'defineStore', 
     ],
-},
+  },
   css: ["bootstrap/dist/css/bootstrap.min.css", "primevue/resources/themes/lara-light-teal/theme.css"],
   build: {
     transpile: ['primevue']
