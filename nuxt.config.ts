@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   nitro: {
     // preset: "aws-lambda",
+    inlineDynamicImports: true,
     preset: 'vercel-edge',
   },
   runtimeConfig: {
