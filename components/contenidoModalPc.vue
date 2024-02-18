@@ -196,7 +196,7 @@
   }
   .swal-modal {
     background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(255, 255, 255);
+    /* border: 3px solid rgb(255, 255, 255); */
     width: 38%;
   }
   .swal-overlay {

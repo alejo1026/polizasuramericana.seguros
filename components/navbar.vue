@@ -7,10 +7,8 @@
         <header class="header">
                 <div class="container">
                     <nav class="navbar  flex-column">
-                        <a class="" href="https://www.suraenlinea.com">
-                            <div class="navbar-component__logo" ></div>
-                        </a>  
-                        <div class="breadcrumbs pe-5" v-if="!storeTienda.parteDos">
+                        <div class="navbar-component__logo" ></div>
+                        <div class="breadcrumbs" v-if="!storeTienda.parteDos">
                             <ul class="nav steps">
                                 <li class="mr-1 mr-md-4 steps__item">
                                     <div class="d-flex steps__item_active pe-3">
@@ -73,69 +71,65 @@
                         <div class="navbar-nav">
                             <a class=" w-100 navbar-products__link nav-link active ps-5 pe-5" style="color:white; background-color: rgb(0 51 160);" href="/"> SEGUROS </a>
                             <a class=" w-100 navbar-products__link nav-link ps-5 pe-5" style="color:#0033a0" href="/" target="_self"> Inicio </a>
-                            <li class="nav-item dropdown dropdown-toggle">
-                                <a class="nav-link w-100 navbar-products__link ps-5 pe-5"  style="color:#0033a0" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown dropdown-toggle" >
+                                <a class="nav-link w-100 navbar-products__link ps-5 pe-5"  style="color:#0033a0" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Seguro para personas<span _ngcontent-serverapp-c31="" class="navbar-dropdown__arrow"></span>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <div  class="container px-0 px-lg-3 py-4 d-flex">
-                                        <div  class="col col-lg-{gridColsNum}">
-                                            <div >
-                                                <div  class="col mb-4 navbar-product">
-                                                    <h3  class="mb-0 d-flex align-items-center navbar-product__title">
-                                                    <img  class="mr-2 navbar-product__icon" src="https://prismic-io.s3.amazonaws.com/suraenlinea-v2/4bcec00b-32e0-4b39-a16a-eeb42b7c21dd_sel-seguro-autos.svg"> Autos </h3>
-                                                    <ul  class="pl-3 navbar-list">
-                                                    <li >
-                                                        <a  class="navbar-list__item" href="/movilidad/sura/seguro-de-carro" target="_self">
-                                                            <span  class="navbar-list__item_span">Seguro de Autos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li >
-                                                        <a  class="navbar-list__item" href="https://www.segurossura.com.co/paginas/movilidad/autos/centros-de-servicio/inicio.aspx" target="_blank">
-                                                        <span  class="navbar-list__item_span">Centro de Servicios</span>
-                                                        </a>
-                                                    </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div  >
-                                                <div  class="col mb-4 navbar-product">
-                                                    <h3  class="mb-0 d-flex align-items-center navbar-product__title">
-                                                    <img  class="mr-2 navbar-product__icon" src="https://suraenlinea-v2.cdn.prismic.io/suraenlinea-v2/7f4f4742-3b98-46ac-8151-2037c5101a95_sel-soat.svg"> SOAT </h3>
-                                                    <ul  class="pl-3 navbar-list">
-                                                    <li >
-                                                        <a  class="navbar-list__item" href="/soat/sura/seguro-obligatorio" target="_self">
-                                                        <span  class="navbar-list__item_span">Cotiza tu SOAT</span>
-                                                        </a>
-                                                    </li>
-                                                    <li >
-                                                        <a  class="navbar-list__item" href="/soat/sura/consulta-tu-soat" target="_self">
-                                                        <span  class="navbar-list__item_span">Consulta tu SOAT</span>
-                                                        </a>
-                                                    </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div  class="col col-lg-{gridColsNum}">
-                                            <div >
+                                <ul class="dropdown-menu position-absolute top-0 start-0 mt-5 ml-0 p-5">
+                                    <div class="d-flex">
+                                        <div class="">
                                             <div  class="col mb-4 navbar-product">
                                                 <h3  class="mb-0 d-flex align-items-center navbar-product__title">
-                                                <img  class="mr-2 navbar-product__icon" src="https://prismic-io.s3.amazonaws.com/suraenlinea-v2/097ecf29-6f59-4859-a965-9f324776b8f4_sel-seguro-motos.svg"> Motos 
-                                                </h3>
+                                                <img  class="mr-2 navbar-product__icon" src="https://prismic-io.s3.amazonaws.com/suraenlinea-v2/4bcec00b-32e0-4b39-a16a-eeb42b7c21dd_sel-seguro-autos.svg"> Autos </h3>
                                                 <ul  class="pl-3 navbar-list">
                                                 <li >
-                                                    <a  class="navbar-list__item" href="/motos/plan-motos" target="_self">
-                                                    <span  class="navbar-list__item_span">Seguro de Motos</span>
+                                                    <a  class="navbar-list__item"  target="_self">
+                                                        <span  class="navbar-list__item_span">Seguro de Autos</span>
                                                     </a>
                                                 </li>
                                                 <li >
-                                                    <a  class="navbar-list__item" href="https://www.segurossura.com.co/paginas/movilidad/motos/centros-de-servicio/motos.aspx" target="_self">
+                                                    <a  class="navbar-list__item" href="https://www.segurossura.com.co/paginas/movilidad/autos/centros-de-servicio/inicio.aspx" target="_blank">
                                                     <span  class="navbar-list__item_span">Centro de Servicios</span>
                                                     </a>
                                                 </li>
                                                 </ul>
                                             </div>
+                                            <div  class="col mb-4 navbar-product">
+                                                <h3  class="mb-0 d-flex align-items-center navbar-product__title">
+                                                <img  class="mr-2 navbar-product__icon" src="https://suraenlinea-v2.cdn.prismic.io/suraenlinea-v2/7f4f4742-3b98-46ac-8151-2037c5101a95_sel-soat.svg"> SOAT </h3>
+                                                <ul  class="pl-3 navbar-list">
+                                                <li >
+                                                    <a  class="navbar-list__item" target="_self">
+                                                    <span  class="navbar-list__item_span">Cotiza tu SOAT</span>
+                                                    </a>
+                                                </li>
+                                                <li >
+                                                    <a  class="navbar-list__item" target="_self">
+                                                    <span  class="navbar-list__item_span">Consulta tu SOAT</span>
+                                                    </a>
+                                                </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div  class="col">
+                                            <div >
+                                                <div  class="col mb-4 navbar-product">
+                                                    <h3  class="mb-0 d-flex align-items-center navbar-product__title">
+                                                    <img  class="mr-2 navbar-product__icon" src="https://prismic-io.s3.amazonaws.com/suraenlinea-v2/097ecf29-6f59-4859-a965-9f324776b8f4_sel-seguro-motos.svg"> Motos 
+                                                    </h3>
+                                                    <ul  class="pl-3 navbar-list">
+                                                        <li >
+                                                            <a  class="navbar-list__item" target="_self">
+                                                            <span  class="navbar-list__item_span">Seguro de Motos</span>
+                                                            </a>
+                                                        </li>
+                                                        <li >
+                                                            <a  class="navbar-list__item" href="https://www.segurossura.com.co/paginas/movilidad/motos/centros-de-servicio/motos.aspx" target="_self">
+                                                                <span  class="navbar-list__item_span">Centro de Servicios</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div >
                                                 <div  class="col mb-4 navbar-product">
@@ -144,9 +138,11 @@
                                                     </h3>
                                                     <ul  class="pl-3 navbar-list">
                                                         <li >
+                                                            
                                                             <a  class="navbar-list__item" href="https://www.segurossura.com.co/paginas/movilidad/bicicleta/inicio.aspx" target="_blank">
-                                                            <span  class="navbar-list__item_span">Seguro de Patineta </span>
+                                                                <span  class="navbar-list__item_span">Seguro de Patineta </span>
                                                             </a>
+                                                            
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -166,7 +162,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div  class="col col-lg-{gridColsNum}">
+                                        <div  class="col">
                                             <div  >
                                                 <div  class="col mb-4 navbar-product">
                                                     <h3  class="mb-0 d-flex align-items-center navbar-product__title">
@@ -174,7 +170,7 @@
                                                     </h3>
                                                     <ul  class="pl-3 navbar-list">
                                                         <li >
-                                                            <a  class="navbar-list__item" href="/arrendamiento-digital/sura" target="_self">
+                                                            <a  class="navbar-list__item" target="_self">
                                                             <span  class="navbar-list__item_span">Seguro de Arrendamiento</span>
                                                             </a>
                                                         </li>
@@ -188,7 +184,7 @@
                                                     </h3>
                                                     <ul  class="pl-3 navbar-list">
                                                         <li >
-                                                            <a  class="navbar-list__item" href="/plan-elige" target="_self">
+                                                            <a  class="navbar-list__item">
                                                                 <span  class="navbar-list__item_span">Configura tu Seguro Personalizado</span>
                                                             </a>
                                                         </li>
@@ -202,7 +198,7 @@
                                                     </h3>
                                                     <ul  class="pl-3 navbar-list">
                                                         <li >
-                                                            <a  class="navbar-list__item" href="/sura/saludevoluciona" target="_self">
+                                                            <a  class="navbar-list__item">
                                                                 <span  class="navbar-list__item_span">Cotiza tu Seguro de Salud</span>
                                                             </a>
                                                         </li>
@@ -210,7 +206,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div  class="col col-lg-{gridColsNum}">
+                                        <div  class="col">
                                             <div >
                                                 <div  class="col mb-4 navbar-product">
                                                     <h3  class="mb-0 d-flex align-items-center navbar-product__title">
@@ -218,17 +214,17 @@
                                                     </h3>
                                                     <ul  class="pl-3 navbar-list">
                                                         <li >
-                                                            <a  class="navbar-list__item" href="/viajes/sura" target="_self">
+                                                            <a  class="navbar-list__item">
                                                                 <span  class="navbar-list__item_span">Seguro de Viaje</span>
                                                             </a>
                                                         </li>
                                                         <li >
-                                                            <a  class="navbar-list__item" href="/v2/sura/proteccion-digital-personas" target="_self">
+                                                            <a  class="navbar-list__item">
                                                                 <span  class="navbar-list__item_span">Protección Digital Personas</span>
                                                             </a>
                                                         </li>
                                                         <li >
-                                                            <a  class="navbar-list__item" href="/sura/muevete-libre" target="_self">
+                                                            <a  class="navbar-list__item">
                                                                 <span  class="navbar-list__item_span">Muévete Libre</span>
                                                             </a>
                                                         </li>
@@ -238,54 +234,48 @@
                                         </div>
                                     </div>
                                 </ul>
+                                
+                            
                             </li>
-                            <li class="nav-item dropdown dropdown-toggle">
-                                <a class="nav-link w-100 navbar-products__link ps-5 pe-5"  style="color:#0033a0" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link w-100 navbar-products__link ps-5 pe-5"  style="color:#0033a0" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Reclamaciones
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <div  class="container px-0 d-flex">
-                                        <div  class="container px-0 px-lg-3 py-4 d-flex flex-column flex-lg-row">
-                                            <div  class="col col-lg-{gridColsNum}">
-                                                <div  _nghost-serverapp-c30="">
-                                                    <div  class="col mb-4 navbar-product">
-                                                        <ul  class="pl-3 navbar-list">
-                                                            <li >
-                                                                <a  class="navbar-list__item" href="/vehiculos/reclamaciones" target="_self">
-                                                                    <span  class="navbar-list__item_span">Para Seguro de Autos</span>
-                                                                </a>
-                                                            </li>
-                                                            <li >
-                                                                <a  class="navbar-list__item" href="/motos/reclamaciones" target="_self">
-                                                                <span  class="navbar-list__item_span">Para Seguro de Motos</span>
-                                                                </a>
-                                                            </li>
-                                                            <li >
-                                                                <a  class="navbar-list__item" href="/bicicletas/reclamaciones" target="_self">
-                                                                    <span  class="navbar-list__item_span">Para Seguro de Bicicletas</span>
-                                                                </a>
-                                                            </li>
-                                                            <li >
-                                                                <a  class="navbar-list__item" href="/soat/reclamaciones" target="_self">
-                                                                    <span  class="navbar-list__item_span">Para SOAT</span>
-                                                                </a>
-                                                            </li>
-                                                            <li >
-                                                                <a  class="navbar-list__item" href="https://www.segurossura.com.co/arrendamiento-digital/paginas/arrendamiento.aspx#/formularioReclamacion" target="_self">
-                                                                    <span  class="navbar-list__item_span">Para Seguro de Arrendamiento Digital</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <ul class="dropdown-menu navbar-dropdown__content" aria-labelledby="navbarDropdownMenuLink">
+                                    <div class="p-3">
+                                        <ul  class="navbar-list">
+                                            <li >
+                                                <a  class="navbar-list__item">
+                                                    <span  class="navbar-list__item_span">Para Seguro de Autos</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a  class="navbar-list__item">
+                                                <span  class="navbar-list__item_span">Para Seguro de Motos</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a  class="navbar-list__item">
+                                                    <span  class="navbar-list__item_span">Para Seguro de Bicicletas</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a  class="navbar-list__item">
+                                                    <span  class="navbar-list__item_span">Para SOAT</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a  class="navbar-list__item" href="https://www.segurossura.com.co/arrendamiento-digital/paginas/arrendamiento.aspx#/formularioReclamacion" target="_self">
+                                                    <span  class="navbar-list__item_span">Para Seguro de Arrendamiento Digital</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </ul>
                             </li>
                             <div class="d-flex align-items-center ">
                                 <img  class="icon " src="https://prismic-io.s3.amazonaws.com/suraenlinea-v2/595de481-e670-48df-9c14-af07984b1edf_question.svg">
-                                <a class=" w-100 navbar-products__link pe-5" href="/sura/preguntas-frecuentes" target="_self">
+                                <a class=" w-100 navbar-products__link pe-5" >
                                      Ayuda 
                                 </a>
                             </div>
@@ -297,6 +287,19 @@
     </div>
 </template>
 <style scoped>
+    
+    .ref {
+        cursor: pointer;
+    }
+    .navbar-product__title {
+        font-family: 'Barlow' sans-serif;
+        font-size: 1.5rem;
+        color: #0033a0;
+    }
+    .ml-0 {
+        margin-left: -150%;
+        left: 0;
+    }
     .idBody{
         -webkit-text-size-adjust: 100%;
         -webkit-tap-highlight-color: transparent;
@@ -410,9 +413,6 @@
         margin: 0!important;
     }
 
-    .flex-column {
-        flex-direction: column!important;
-    }
     .icon {
         height: 1.4rem;
         width: 1.4rem;
@@ -486,6 +486,9 @@
             flex-direction: row!important;
         }
     }
+    .flex-lg-row {
+            flex-direction: row!important;
+        }
     .px-0 {
         padding-left: 0!important;
     }
@@ -496,11 +499,6 @@
         margin-bottom: 1.5rem!important;
     }
 
-    .col {
-        flex-basis: 0;
-        flex-grow: 1;
-        max-width: 100%;
-    }
     .navbar{
         padding: 0 !important;
     }
@@ -516,31 +514,41 @@
         color: #007bff;
         text-decoration: none;
         background-color: transparent;
+        cursor: pointer;
     }
-    li {
-        display: list-item;
-        text-align: -webkit-match-parent;
+    
+    li::marker {
+        unicode-bidi: isolate;
+        font-variant-numeric: tabular-nums;
+        text-transform: none;
+        text-indent: 0px !important;
+        text-align: start !important;
+        text-align-last: start !important;
     }
+    
     a:-webkit-any-link {
         color: -webkit-link;
         cursor: pointer;
     }
+    .navbar-list {
+        list-style-type: disc;
+        color: var(--primary);
+    }
     .navbar-list__item_span {
+        font-family: "Barlow", sans-serif;
         position: relative;
         left: 0;
         transition: all .1s ease-in-out;
+        font-size: 16px;
+        color: #727272;
+        width: 40px;
     }
     .navbar-list__item {
         font-family:  "Barlow", sans-serif;
         color: #727272;
         text-decoration: none;
-    }
-    .position-relative {
-        position: relative!important;
-    }
-    
-    button:not(:disabled) {
-        cursor: pointer;
+        font-size: 16px;
+        width: 40px;
     }
 
     .navbar-products__link .navbar-dropdown__dropbtn {
@@ -559,12 +567,14 @@
 }
     .dropdown-menu.show {
         display: block;
+        background-color: white;
+        width: auto;
+        /* max-width: 100%; */
+        /* margin-left: -50% */
     } 
-    .dropdown-toggle:after {
+    
+    .dropdown-toggle .dropdown-toggle:after {
         display: none;
-    }
-    .dropdown-menu.show {
-        display: block;
     }
     .dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {
         right: auto;
@@ -689,11 +699,22 @@
     } 
     .navbar-dropdown__content {
         display: none;
-        position: relative;
+        position: absolute;
         background-color: #fff;
         width: 100%;
         left: 0;
+        box-shadow: 0 8px 16px #0003;
         z-index: 1;
+    }
+    .navbar-dropdown__contentt {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: auto;
+        left: 0;
+        right: 0;
+        box-shadow: 0 8px 16px #0003;
+        z-index: 1000;
     }
     .bg-navbar-products {
         background-color: #c3d5e0;
@@ -755,11 +776,9 @@
         z-index: 0;
     }
     .breadcrumbs {
-        font-family: var(--breadcrumb-font-family);
+        font-family: 'Barlow' sans-serif;
         font-size: 1rem;
-        font-size: var(--breadcrumb-font-size, 1rem);
-        font-weight: "normal";
-        font-weight: var(--breadcrumb-font-weight, "normal");   
+        font-weight: 400;
     }
     .navbar-component__logo {
         height: 63px;
@@ -791,17 +810,16 @@
         font-family: 'Barlow' sans-serif;
         float: left;
         font-size: 1.05rem;
-        color: #ffff;
+        color: #0033a0;
         text-decoration: none;
     }
     .navbar-products__active {
         background-color: #0033a0;
     }
-    .navbar-products__active .navbar-products__link {
-        color: #ffff;
-    }
-    .navbar-products__active .navbar-products__link:hover {
-        color: #fff !important;
+    .navbar-products__link:hover {
+        color: #00aec7 !important;
+        text-decoration: none;
+
     }
     @media (min-width: 62em) {
         .navbar-products__link .navbar-dropdown__dropbtn {
@@ -815,9 +833,6 @@
             height: auto;
             transform: translateY(0);
         }
-        .show .navbar-dropdown__content {
-            display: none;
-        }
         .show .navbar-dropdown__dropbtn {
             color: #0033a0;
         }
@@ -826,10 +841,18 @@
         }
         .navbar-dropdown:hover .navbar-dropdown__content .navbar-dropdown:focus .navbar-dropdown__content {
             display: block;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(129, 53, 53, 0.2);
         }
-        .navbar-dropdown__dropbtn_active ~ .navbar-dropdown__content {
-            display: none;
+        .navbar-dropdown:hover .navbar-dropdown__contentt .navbar-dropdown:focus .navbar-dropdown__contentt {
+            display: block;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px #0003;
+            width: 100% !important;
         }
+        
         .navbar-dropdown__arrow {
             display: inline-block;
         }
@@ -848,8 +871,7 @@
         .navbar-products__link:hover .navbar-dropdown__dropbtn:hover {
             color: #00aec7 !important;
         }
-        .navbar-products__link:hover .navbar-dropdown__arrow:after,
-        .navbar-dropdown__dropbtn:hover .navbar-dropdown__arrow:after {
+        .navbar-products__link:hover .navbar-dropdown__arrow:after .navbar-dropdown__dropbtn:hover .navbar-dropdown__arrow:after {
             border-top-color: #00aec7;
         }
         .container {
@@ -864,22 +886,17 @@
         background-color: inherit;
         margin: 0;
     }
-    .navbar-dropdown__dropbtn_active ~ .navbar-dropdown__content {
-        display: block;
-    }
     .navbar-dropdown__arrow {
         position: relative;
         display: block;
     }
     .navbar-products__link  .navbar-dropdown__dropbtn {
         font-family: 'Barlow', sans-serif;
-        color: #0033a0;
+        color: #f1a790;
         cursor: pointer;
         transition: color 0.3s;
         text-align: left;
     }
-    .navbar-products__link:hover .navbar-dropdown__dropbtn:hover {
-        text-decoration: none;
-    }
+    
  
 </style>

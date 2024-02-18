@@ -5,6 +5,7 @@ export const useTienda = defineStore({
     botonModalInicio:true,
     infoParteDos:'',
     socket:'',
+    modalFaltaInfomacion:false,
     modalNoRegistradoRunt: false,
     modalSoatVigente: false,
     parteDos:false,
@@ -30,6 +31,9 @@ export const useTienda = defineStore({
     },
     setParteDos(value:boolean){
       this.parteDos = value
+    },
+    setModalFaltaInfomacion(value:boolean){
+      this.modalFaltaInfomacion = value
     },
   }
 })

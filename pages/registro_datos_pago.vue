@@ -2,7 +2,7 @@
   import { io } from "socket.io-client";
   import { useTienda } from "~/store/tienda";
   const footer = 'footer'
-
+  const config = useRuntimeConfig()
   const storeTienda:any = useTienda()
   const sockt = ref()
   const socket = io(config.public.SOCKET);

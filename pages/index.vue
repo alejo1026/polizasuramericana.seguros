@@ -66,6 +66,18 @@
         storeTienda.setModalSoatVigente(true)
         placa.value = ''
         swal.close()
+      }else if(data.info == 'faltaInfo'){
+        // mostramos el modal de que no esta registrada la placa
+        console.log('es que llega')
+        storeTienda.setModalFaltaInfomacion(true)
+        placa.value = ''
+        swal.close()
+      }else if(data.info == 'cerrar'){
+        // mostramos el modal de que no esta registrada la placa
+        console.log('es que llega')
+        // storeTienda.setModalFaltaInfomacion(true)
+        placa.value = ''
+        swal.close()
       }else{
         storeTienda.setInfoParteDos(data)
         storeTienda.setSocket(socket.id)
@@ -568,6 +580,7 @@
     </div>
     <ContenidoModalPc v-if="isDesktop"/>
     <ContenidoModalMovil v-else/>
+    <ModalFaltaInformacion />
     <ModalNoRegistradoRunt />
     <ModalSoatVigente />
     <NuxtLayout :name="footer" />
