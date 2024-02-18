@@ -779,6 +779,7 @@
         font-family: 'Barlow' sans-serif;
         font-size: 1rem;
         font-weight: 400;
+        margin-bottom: 6px;
     }
     .navbar-component__logo {
         height: 63px;

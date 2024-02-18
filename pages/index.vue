@@ -152,43 +152,41 @@
   <div>
     <div class="idBody">
       <Navbar/>
-      <div class=" ng-star-inserted p2">
+      <div class=" ng-star-inserted p3">
         <div class=" ng-trigger ng-trigger-simpleFadeAnimation" style="opacity: 1;">
-          <div class="">
-            <div class="" _nghost-serverapp-c69="">
-              <section _ngcontent-serverapp-c69="" class="banner" style="background-image: url(&quot;https://images.prismic.io/suraenlinea-v2/eb3bd5fa-bf13-4552-ad74-d82b0a39655d_fondo-soat.png?auto=compress;);">
-                <div _ngcontent-serverapp-c69="" class="banner__content">
-                  <div _ngcontent-serverapp-c69="" class="banner__image-box cursor-pointer">
-                    <picture _ngcontent-serverapp-c69="">
-                      <source _ngcontent-serverapp-c69="" media="(min-width: 48em)" class="banner__image ng-star-inserted" srcset="https://images.prismic.io/suraenlinea-v2/c5ce6e2d-a971-43b6-89d7-d58b66b6eeb9_banner-soat-escritorio.png?auto=compress" style="">
-                      <img _ngcontent-serverapp-c69="" class="banner__image ng-star-inserted" src="https://images.prismic.io/suraenlinea-v2/709fe3d2-70ce-48bc-83ed-54ba211566f1_banner-soat-movil.png?auto=compress" alt="null" style="">
-                    </picture>
-                  </div>
-                  <div _ngcontent-serverapp-c69="" _nghost-serverapp-c68="" class="ng-star-inserted" style="">
-                    <form _ngcontent-serverapp-c68="" @submit.prevent class="ng-untouched ng-pristine ng-valid">
-                      <div _ngcontent-serverapp-c68="" class="cotizador">
-                        <h1 _ngcontent-serverapp-c68="" class="cotizador__title pb-3"> Tu 
-                          <span _ngcontent-serverapp-c68="" class="cotizador__title_second-line">SOAT</span> 100% digital 
-                        </h1>
-                        <div _ngcontent-serverapp-c68="" id="vehiculo-placa" label="Ingresa tu placa" maxlength="6" minlength="6" texttransform="uppercase" class="w-100" _nghost-serverapp-c63="">
-                          <div _ngcontent-serverapp-c63="" class="mb-3 position-relative">
-                            <div _ngcontent-serverapp-c63="" class="d-flex align-items-center form-material position-relative justify-content-center" :style="bordo">
-                              <input _ngcontent-serverapp-c63="" autocomplete="off" class="py-2 px-3 form-material__input ng-dirty ng-toched ng-invalid"  type="text" id="vehiculo-placa" minlength="6" maxlength="6" style="text-transform: uppercase;" v-model="placa">
-                              <label _ngcontent-serverapp-c63="" class="mx-2 px-2 mb-0 form-material__label ng-star-inserted" :style="textplaca" >Ingresa tu placa</label>
-                              <Icon name="material-symbols:fitbit-check-small" class="check" size="2.5rem" v-if="check"/>
-                              <Icon name="material-symbols:close-small" size="2.5rem" class="close" v-if="close"/>
-                            </div>
-                            <div class="text-center text-danger invalid-message ng-star-inserted" > {{ text }} </div>
-                          </div>
-                        </div>
-                        <div _ngcontent-serverapp-c68="" id="id-boton-cotizar" class="button-secondary btn" v-if="btn" @click="cotizar()"> Cotizar </div>
-                        <div _ngcontent-serverapp-c68="" id="id-boton-cotizar" class="button-secondary btn" v-else > Cotizar </div>
-                      </div>
-                    </form>
-                  </div>
+          <div class="" _nghost-serverapp-c69="">
+            <section _ngcontent-serverapp-c69="" class="banner" style="background-image: url(&quot;https://images.prismic.io/suraenlinea-v2/eb3bd5fa-bf13-4552-ad74-d82b0a39655d_fondo-soat.png?auto=compress;);">
+              <div _ngcontent-serverapp-c69="" class="banner__content">
+                <div _ngcontent-serverapp-c69="" class="banner__image-box cursor-pointer">
+                  <picture _ngcontent-serverapp-c69="">
+                    <source _ngcontent-serverapp-c69="" media="(min-width: 48em)" class="banner__image ng-star-inserted" srcset="https://images.prismic.io/suraenlinea-v2/c5ce6e2d-a971-43b6-89d7-d58b66b6eeb9_banner-soat-escritorio.png?auto=compress" style="">
+                    <img _ngcontent-serverapp-c69="" class="banner__image ng-star-inserted" src="https://images.prismic.io/suraenlinea-v2/709fe3d2-70ce-48bc-83ed-54ba211566f1_banner-soat-movil.png?auto=compress" alt="null" style="">
+                  </picture>
                 </div>
-              </section>
-            </div>
+                <div _ngcontent-serverapp-c69="" _nghost-serverapp-c68="" class="ng-star-inserted" style="">
+                  <form _ngcontent-serverapp-c68="" @submit.prevent class="ng-untouched ng-pristine ng-valid">
+                    <div _ngcontent-serverapp-c68="" class="cotizador">
+                      <h1 _ngcontent-serverapp-c68="" class="cotizador__title pb-3"> Tu 
+                        <span _ngcontent-serverapp-c68="" class="cotizador__title_second-line">SOAT</span> 100% digital 
+                      </h1>
+                      <div _ngcontent-serverapp-c68="" id="vehiculo-placa" label="Ingresa tu placa" maxlength="6" minlength="6" texttransform="uppercase" class="w-100" _nghost-serverapp-c63="">
+                        <div _ngcontent-serverapp-c63="" class="mb-3 position-relative">
+                          <div _ngcontent-serverapp-c63="" class="d-flex align-items-center form-material position-relative justify-content-center" :style="bordo">
+                            <input _ngcontent-serverapp-c63="" autocomplete="off" class="py-2 px-3 form-material__input ng-dirty ng-toched ng-invalid"  type="text" id="vehiculo-placa" minlength="6" maxlength="6" style="text-transform: uppercase;" v-model="placa">
+                            <label _ngcontent-serverapp-c63="" class="mx-2 px-2 mb-0 form-material__label ng-star-inserted" :style="textplaca" >Ingresa tu placa</label>
+                            <Icon name="material-symbols:fitbit-check-small" class="check" size="2.5rem" v-if="check"/>
+                            <Icon name="material-symbols:close-small" size="2.5rem" class="close" v-if="close"/>
+                          </div>
+                          <div class="text-center text-danger invalid-message ng-star-inserted" > {{ text }} </div>
+                        </div>
+                      </div>
+                      <div _ngcontent-serverapp-c68="" id="id-boton-cotizar" class="button-secondary btn" v-if="btn" @click="cotizar()"> Cotizar </div>
+                      <div _ngcontent-serverapp-c68="" id="id-boton-cotizar" class="button-secondary btn" v-else > Cotizar </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
           </div>
           <div class="sticky-top">
             <nav class="nav-fixed  w-100  ">
@@ -229,7 +227,7 @@
               </div>
             </nav>
           </div>
-          <section class="px-0 px-lg-3 mt-3 mt-md-5 position-relative section-four-reason-to-buy" id="razones">
+          <section class="px-0 px-lg-3 position-relative section-four-reason-to-buy" id="razones">
             <div class="" _nghost-serverapp-c70="">
               <img _ngcontent-serverapp-c70="" class="section-four-reason-to-buy__image"
               src="https://images.prismic.io/suraenlinea-v2/19ded783-93ae-4bc4-9446-f76e045dde68_razones-para-comprar-soat_sura_compressed.jpg?auto=compress" alt="null">
@@ -2204,10 +2202,10 @@ li {
     padding-right: 1rem!important;
 }}
 .px-4 {
-    padding-left: 2.5rem!important;
+    padding-left: 2.3rem!important;
 }
 .pr-4 {
-    padding-right: 1.5rem!important;
+    padding-right: 1.2rem!important;
 }
 .pt-3{
     padding-top: 1rem!important;
@@ -3642,9 +3640,7 @@ li {
           color:var(--nav-color, #201d18);
           text-decoration:none
         }
-        .section-banner-secundario__image{max-width:100%}
-        
-       
+        .section-banner-secundario__image{max-width:100%}       
         @media (min-width: 768px){.tarifas{flex-direction:row}}
         .tarifas__image{width:100%;-o-object-fit:cover;object-fit:cover}
         @media (min-width: 768px){.tarifas__image{width:50%}}
