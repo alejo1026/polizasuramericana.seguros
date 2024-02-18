@@ -162,7 +162,7 @@
     </Dialog>
   </div>
 </template>
-<style>
+<style scoped>
   .contenido{
     margin-lef:3%;
     margin-right:3%;
@@ -193,13 +193,5 @@
   }
   #btnModalCerrar {
     background-color: #f6ed3f;
-  }
-  .swal-modal {
-    background-color: rgb(255, 255, 255);
-    /* border: 3px solid rgb(255, 255, 255); */
-    width: 38%;
-  }
-  .swal-overlay {
-    background-color: #01010253;
   }
 </style>
