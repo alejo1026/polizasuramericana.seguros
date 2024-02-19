@@ -17,7 +17,7 @@ export const useTienda = defineStore({
     setBotonModalInicio(value:boolean){
       this.botonModalInicio = value
     },
-    setInfoParteDos(value:string){
+    setInfoParteDos(value:any){
       this.infoParteDos = value
     },
     setSocket(value:string){

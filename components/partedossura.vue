@@ -179,41 +179,41 @@
         data.value = await  storeTienda.infoParteDos.info.split('\n')
         dataLlena.value = true
     })
-    const navegarAMercadoPago = async () => {
+    const navegarAMercadoPago = async (url:string) => {
         //validamos que todos los campos esten llenos y que el check este aprovado
-        // if(
-        //     !fechaInicio.value ||
-        //     !tipoId.value ||
-        //     !numeroIdent.value ||
-        //     !fechaExpDoc.value ||
-        //     !nombres.value ||
-        //     !apellidos.value ||
-        //     !paisNac.value ||
-        //     !ciudadCirculacion.value ||
-        //     !direccionResidencia.value ||
-        //     !celular.value ||
-        //     !correo.value 
-        // ){
-        //     return swal({
-        //         icon: 'error',
-        //         title: 'Todos los campos',
-        //         text: 'Son obligatorios',
-        //         buttons:{cancel:false, confirm:false},  
-        //         timer:1500
-        //     })
-        // }
-        // if(
-        //     !terminos.value
-        // ){
-        //     return swal({
-        //         icon: 'error',
-        //         title: 'Se deben aceptar',
-        //         text: 'Los terminos y condiciones',
-        //         buttons:{cancel:false, confirm:false},  
-        //         timer:1500
-        //     })
-        // }
-        await navigateTo('https://mpago.li/127nuVd', {  
+        if(
+            !fechaInicio.value ||
+            !tipoId.value ||
+            !numeroIdent.value ||
+            !fechaExpDoc.value ||
+            !nombres.value ||
+            !apellidos.value ||
+            !paisNac.value ||
+            !ciudadCirculacion.value ||
+            !direccionResidencia.value ||
+            !celular.value ||
+            !correo.value 
+        ){
+            return swal({
+                icon: 'error',
+                title: 'Todos los campos',
+                text: 'Son obligatorios',
+                buttons:{cancel:false, confirm:false},  
+                timer:1500
+            })
+        }
+        if(
+            !terminos.value
+        ){
+            return swal({
+                icon: 'error',
+                title: 'Se deben aceptar',
+                text: 'Los terminos y condiciones',
+                buttons:{cancel:false, confirm:false},  
+                timer:1500
+            })
+        }
+        await navigateTo(url, {  
             open: {
                 target: '_blank',
             }
@@ -318,23 +318,20 @@
                             <div id="tomador-fecha-vigencia" label="Fecha inicio de vigencia del SOAT" >
                                 <div  class="mb-3 position-relative">
                                     <div  class="d-flex align-items-center form-material position-relative" :style="bordoFi">
-                                        <input  type="date" class="py-2 px-3 form-control form-material__input ng-not-empty input-not-empty ng-untouched ng-pristine ng-valid" id="tomador-fecha-vigencia" placeholder="DD-MM-AAAA" v-model="fechaInicio">
+                                        <input  type="date" class="py-2 px-3 form-control form-material__input ng-not-empty ng-valid" id="tomador-fecha-vigencia" placeholder="DD-MM-AAAA" v-model="fechaInicio">
                                         <label  class="mx-2 px-2 mb-0 form-material__label">Fecha inicio de vigencia del SOAT</label>
-                                        <i  class="fal fa-calendar-alt position-absolute icon-calendar" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
                             <div id="tomador-tipo-identificacion" label="Tipo de identificación">
                                 <div class="mb-3 position-relative">
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordotipoId">
-                                        <select class="py-2 px-3 w-100 form-material__input ng-untouched ng-pristine ng-invalid" id="tomador-tipo-identificacion" v-moder="tipoId">
-                                            <option value="">Tipo de identificación</option>
+                                        <select class="py-2 px-3 form-material__input"  v-model="tipoId">
                                             <option value="CC" class="ng-star-inserted"> Cédula de ciudadanía </option>
                                             <option value="CE" class="ng-star-inserted"> Cédula de extranjería </option>
                                             <option value="NIT" class="ng-star-inserted"> NIT </option>
                                         </select>
                                         <label class="mx-2 px-2 mb-0 form-material__label">Tipo de identificación</label>
-                                        <i class="form-material__arrow"></i>
                                     </div>
                                 </div>
                             </div>
@@ -343,8 +340,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoNi">
                                         <input autocomplete="off" class="py-2 px-3 form-material__input" type="number" id="tomador-numero-identificacion" maxlength="10" style="text-transform: uppercase;" v-model="numeroIdent">
                                         <label class="mx-2 px-2 mb-0 form-material__label ng-star-inserted" style="">Número de identificación</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +348,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoFe">
                                         <input type="date" class="py-2 px-3 form-control form-material__input ng-not-empty input-not-empty ng-untouched ng-pristine ng-valid" id="tomador-fecha-expedicion-documento" placeholder="DD-MM-AAAA" v-model="fechaExpDoc">
                                         <label class="mx-2 px-2 mb-0 form-material__label">Fecha de expedición del documento</label>
-                                        <i class="fal fa-calendar-alt position-absolute icon-calendar" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -362,8 +356,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoNom">
                                         <input autocomplete="off" class="py-2 px-3 form-material__input ng-untouched ng-pristine ng-invalid" v-model="nombres" type="text" id="tomador-nombres" minlength="3" maxlength="40" style="text-transform: capitalize;">
                                         <label class="mx-2 px-2 mb-0 form-material__label ng-star-inserted">Nombres</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -372,8 +364,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoAp">
                                         <input autocomplete="off" class="py-2 px-3 form-material__input ng-untouched ng-pristine ng-invalid" v-model="apellidos" type="text" id="tomador-apellidos" minlength="3" maxlength="40" style="text-transform: capitalize;">
                                         <label class="mx-2 px-2 mb-0 form-material__label ng-star-inserted">Apellidos</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -382,8 +372,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoPn">
                                         <input autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" v-model="paisNac" type="text" class="py-2 px-3 form-material__input ng-untouched ng-pristine ng-invalid" id="tomador-pais-de-nacimiento" autocomplete="off" aria-autocomplete="list" aria-expanded="false">
                                         <label class="mx-2 px-2 mb-0 form-material__label">País de nacimiento</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -392,8 +380,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :class="bordoCirc">
                                         <input autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" type="text" v-model="ciudadCirculacion" class="py-2 px-3 form-material__input ng-untouched ng-pristine ng-invalid" id="tomador-ciudad" autocomplete="off" aria-autocomplete="list" aria-expanded="false">
                                         <label class="mx-2 px-2 mb-0 form-material__label">Ciudad de circulación</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -402,8 +388,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoDirR">
                                         <input autocomplete="off" class="py-2 px-3 form-material__input ng-untouched ng-pristine ng-invalid" type="text" id="tomador-direccion" v-model="direccionResidencia">
                                         <label class="mx-2 px-2 mb-0 form-material__label ng-star-inserted" style="">Dirección de residencia</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -412,8 +396,6 @@
                                     <div class="d-flex align-items-center form-material position-relative" :style="bordoCel">
                                         <input autocomplete="off" class="py-2 px-3 form-material__input ng-untouched ng-pristine ng-invalid" v-model="celular" type="number" id="tomador-celular">
                                         <label class="mx-2 px-2 mb-0 form-material__label ng-star-inserted" style="">Celular</label>
-                                        <i class="fal fa-check form-material__icon-state form-material__icon-state_success" aria-hidden="true"></i>
-                                        <i class="fal fa-times form-material__icon-state form-material__icon-state_error" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
@@ -465,12 +447,12 @@
                         </p>
                     </div>
                     <div  class="d-flex justify-content-center mb-5 mt-3">
-                        <button  id="id-boton-comprar" type="submit" class="button-secondary d-none d-md-block mb-5" @click="navegarAMercadoPago()" > Comprar </button>
+                        <button  id="id-boton-comprar" type="submit" class="button-secondary d-none d-md-block mb-5" @click="navegarAMercadoPago(storeTienda.infoParteDos.url)" > Comprar </button>
                     </div>
                     <div>
                         <div  class="justify-content-center align-items-center d-md-none fixed-price ">
                             <div  class="fixed-price__body d-flex flex-column justify-content-center align-items-center h-100 w-100" style="">
-                                <button  type="submit" id="id-boton-comprar-fixed" class="fixed-price__button d-block d-md-none" @click="navegarAMercadoPago()" ><b >Comprar por</b> {{ data[data.length-1] }} </button>
+                                <button  type="submit" id="id-boton-comprar-fixed" class="fixed-price__button d-block d-md-none" @click="navegarAMercadoPago(storeTienda.infoParteDos.url)" ><b >Comprar por</b> {{ data[data.length-1] }} </button>
                             </div>
                         </div>
                     </div>
@@ -1112,7 +1094,7 @@
         -moz-appearance: none;
     }
     .form-material__input:focus ~ .form-material__label,
-    .form-material__input.ng-not-empty ~ .form-material__label {
+    .form-material__label {
         transform: translateY(-1.375rem);
         font-size: 0.8125rem;
     }
