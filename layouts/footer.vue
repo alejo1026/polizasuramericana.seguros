@@ -213,6 +213,7 @@
         }
     }
     @media (min-width: 576px){
+    
         .container {
             max-width: 540px;
             
